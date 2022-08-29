@@ -1,0 +1,164 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.container{
+    width: 70%;
+    height: 85%;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+    padding: 0px;
+    
+    
+
+   
+}
+
+.titre{
+    font-size: 16px;
+    font-family: ‘Open Sans’;
+    font-weight: 700;
+    color: #2F3841;
+    text-align: center;
+}
+
+.cartitems{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 350px;
+    width: 750px;
+    gap: 5px;
+    
+
+    
+}
+
+.prodcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 740px;
+    margin: 0px;
+    padding:0px;
+    justify-content: space-between;
+    gap: 10px;
+        
+}
+
+.image img{
+    width: 100PX;
+    height:63PX;
+    text-align: center;
+    margin-left: 40px;
+    opacity: 0.7;
+    
+}
+
+.proditems{
+    width: 30%;
+    height:165px ;
+    background-color:rgba(100, 148, 237, 0.24);
+    border-style: outset;
+        
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nomprod{
+    text-align: center;
+}
+.counter{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    
+}
+
+   .count{
+    height: 20px;
+    width: 25px;
+    margin: 6px 0px 1px 6px;
+    background-color:rgba(220, 220, 220, 0.473);
+    border:#E3F0FF 2px ridge;
+    border-style:outset; 
+}
+
+   .plusmoins{
+    display: flex;
+}
+
+#nbrprod{
+    width: 22px;
+    height: 17px;
+    text-align: center;
+}
+   
+
+    .prices{
+    height: 35px;
+    margin-right: 5px;
+}
+
+   .remove{
+    display: flex;
+    justify-content: space-between;
+}
+/*#heart{
+    background-color: transparent;
+}*/
+
+.like{
+    background: transparent;
+    border: none;
+    margin: 2px;
+    font-size: 15px;
+    height: 15px;
+    color: grey;
+    
+}
+.like i:hover{
+    cursor: pointer;
+}
+
+   .total{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border-style:outset;
+   
+}
+
+   .pannier{
+    height: 136px;
+    opacity: 0.5;
+}
+   .total div{
+    background-color:rgba(220, 220, 220, 0.473);
+    border:#E3F0FF 2px ridge;
+    border-style:inset;
+    
+}
+
+.confirm{
+    display: flex;
+    justify-content: space-between;
+    height: 22px;
+    width: 133px;
+    margin: 10px;
+    border-style: none;
+}
+
+   

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <meta charset="utf_8" />
+    <link rel="stylesheet" href="shoppingcart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h4 class="titre">Shopping Cart</h4>
+      </header>
+      <!--contenu cart-->
+      <section class="cartitems">
+        <!--liste produits-->
+        <div class="prodcontainer">
+          <!--prod number1-->
+          <div class="proditems">
+            <div class="image"><img src="image-shop/pc2.jfif" / alt="PC"></div>
+            <div class="about">
+              <h5 class="nomprod">Pc portable</h5>
+              <div class="counter">
+                <div class="plusmoins">
+                  <button class="count countmoins">-</button>
+                  <div class="count" id="nbrprod">0</div>
+                  <button class="count countplus">+</button>
+                </div>
+                <div class="prices">
+                  <div class="prix" style="text-align: center">1587 dt</div>
+                  <div class="remove">
+                    <i class="fa-solid fa-trash"></i>
+                    <button class="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- prod number 2-->
+          <div class="proditems">
+            <div class="image">
+              <img src="image-shop/tele.jfif" alt="TV" />
+            </div>
+            <div class="about">
+              <h5 class="nomprod">TV</h5>
+              <div class="counter">
+                <div class="plusmoins">
+                  <button class="count countmoins">-</button>
+                  <div class="count" id="nbrprod">0</div>
+                  <button class="count countplus">+</button>
+                </div>
+                <div class="prices">
+                  <div class="prix" style="text-align: center">950 dt</div>
+                  <div class="remove">
+                    <i class="fa-solid fa-trash"></i>
+                    <button class="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--prod number3-->
+          <div class="proditems">
+            <div class="image">
+              <img src="image-shop/phone1.jpg" alt="mobile phone" />
+            </div>
+            <div class="about">
+              <h5 class="nomprod">Mobile Phone</h5>
+              <div class="counter">
+                <div class="plusmoins">
+                  <button class="count countmoins">-</button>
+                  <div class="count" id="nbrprod">0</div>
+                  <button class="count countplus">+</button>
+                </div>
+                <div class="prices">
+                  <div class="prix" style="text-align: center">1050 dt</div>
+                  <div class="remove">
+                    <i class="fa-solid fa-trash"></i>
+                    <button class="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--prod number4 -->
+          <div class="proditems">
+            <div class="image">
+              <img src="image-shop/playstation1.jpg" alt="playstation" />
+            </div>
+            <div class="about">
+              <h5 class="nomprod">Playstation</h5>
+              <div class="counter">
+                <div class="plusmoins">
+                  <button class="count countmoins">-</button>
+                  <div class="count" id="nbrprod">0</div>
+                  <button class="count countplus">+</button>
+                </div>
+                <div class="prices">
+                  <div class="prix">210 dt</div>
+                  <div class="remove">
+                    <i class="fa-solid fa-trash"></i>
+                    <button class="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--prod number 5-->
+          <div class="proditems">
+            <div class="image">
+              <img src="image-shop/camera.jpg" alt="camera" />
+            </div>
+            <div class="about">
+              <h5 class="nomprod">Camera</h5>
+              <div class="counter">
+                <div class="plusmoins">
+                  <button class="count countmoins">-</button>
+                  <div class="count" id="nbrprod">0</div>
+                  <button class="count countplus">+</button>
+                </div>
+                <div class="prices">
+                  <div class="prix" style="text-align: center">1520 dt</div>
+                  <div class="remove">
+                    <i class="fa-solid fa-trash"></i>
+                    <button class="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--prod number6-->
+          <div class="proditems">
+            <div class="image">
+              <img src="image-shop/watch.jpg" alt="watch" />
+            </div>
+            <div class="about">
+              <h5 class="nomprod">Watch</h5>
+              <div class="counter">
+                <div class="plusmoins">
+                  <button class="count countmoins">-</button>
+                  <div class="count" id="nbrprod">0</div>
+                  <button class="count countplus">+</button>
+                </div>
+                <div class="prices">
+                  <div class="prix" style="text-align: center">150 dt</div>
+                  <div class="remove">
+                    <i class="fa-solid fa-trash"></i>
+                    <button class="like">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--total-->
+        <div class="total">
+          <div>
+            <img src="image-shop/shop1.jpg" alt="panier" class="pannier" />
+          </div>
+          <div>
+            <span class="totalprod">
+              Total Items: <span id="tot"> 0 </span>
+            </span>
+          </div>
+          <div>
+            <span id="totalprice"> Total price: <span> 0 </span> dt </span>
+          </div>
+          <div class="confirm">
+            <input class="sbmitbtn" type="button" value="Reset" />
+            <input class="sbmitbtn" type="button" value="Submit" />
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="cartshopping.js"></script>
+  </body>
+</html>
