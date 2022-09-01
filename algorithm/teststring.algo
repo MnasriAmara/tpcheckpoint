@@ -1,0 +1,37 @@
+ALGORITHM teststring
+VAR
+    i , nbrwords , vcount : INTEGER ;
+    str , c : STRING;
+   
+BEGIN
+    c:='';
+    i:=0;
+    Read(str)
+    REAPEAT
+        IF(str[i]<>'.')
+            c:=c + ',' + str[i];
+        END_IF
+    UNTIL(i<=str.length)
+
+    WRITE(c);
+
+    nbrwords:=1;
+    REAPEAT
+        IF(str[i]='')
+            nbrwords:=nbrwords + 1;
+        END_IF
+    UNTIL(i<=str.length)
+        WRITE(nbrwords);
+
+    vcount:=0;
+    var vowel:=['a','e','i','o','u'];
+    FOR i FROM 0 TO 4 Do
+        IF(str[i] in vowel)
+            vcount:= vcount+1;
+        END_IF
+    END_FOR
+
+    WRITE('Number of vowel is :' + vcount);
+END        
+
+    
