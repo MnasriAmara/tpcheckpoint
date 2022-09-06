@@ -1,0 +1,26 @@
+ALGORITHM phrase;
+VAR
+    ch:STRING:="";
+    i:INTEGER:=0;
+    c:CHAR;
+    l:INTEGER;
+    NBM:INTEGER:=1;
+    voy:INTEGER:=0;
+
+BEGIN
+    WHILE (c<>".") DO
+      write("donner un caractère");
+      read (c);
+      ch+:=c;
+      IF (c=" ") THEN
+       NBM:=NBM+1;
+      END_IF
+      IF (c="a"OR c="e" OR c="i"OR c="o" OR c="u") THEN
+       voy:=voy+1
+      END_IF
+      i:=i+1
+    END_WHILE
+    l:=ch.length;
+
+   write(l,NBM,voy)
+END

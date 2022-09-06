@@ -1,0 +1,19 @@
+PROCEDURE triInsertion(tab: ARRAY_OF INTEGER)
+VAR
+    i:INTEGER:=1;
+    tem:INTEGER;
+BEGIN
+  WHILE (i<tab.length) DO
+    tem:=tab[i]
+    WHILE (0<j and tem<tab[j]) DO
+      
+     
+        tab[j+1]=tab[j]
+        j:=j-1;
+       
+      
+    END_WHILE
+    tab[j+1]=tem
+   i:=i+1
+  END_WHILE
+END

@@ -1,0 +1,46 @@
+ALGORITHM solution1
+VAR
+    tab1: ARRAY_OF INTEGER ;
+    tab2: ARRAY_OF INTEGER ;
+    i: INTEGER:=0;
+    j: INTEGER:=0;
+    dinstinct: BOOLEAN:= FALSE;
+    sommedis:INTEGER:=0;
+    sommekifkif:INTEGER:=0;
+BEGIN
+    FOR i FROM 0 TO tab1.length-1   DO
+        dinstinct:=FALSE;
+        FOR j FROM 0 TO tab2.length-1  DO
+            IF(tab1[i]=tab2[j]) THEN
+                dinstinct:= TRUE;
+                BREAK;
+                
+            END_IF
+          
+        END_FOR
+        IF (dinstinct=FALSE)THEN
+            sommedis:= sommedis + tab1[i];
+        END_IF
+        
+        ELSE
+            sommekifkif:= sommekifkif + tab1[i] * 2 ;
+        END_IF
+    END_FOR
+
+    FOR j FROM 0 TO tab2.length-1   DO
+        dinstinct:=FALSE;
+        FOR i FROM 0 TO tab1.length-1  DO
+            IF(tab1[i]=tab2[j]) THEN
+                dinstinct:= TRUE;
+            BREAK;
+            END_IF
+          
+        END_FOR
+        IF (dinstinct=FALSE)THEN
+            sommedis:= sommedis + tab2[j];
+        END_IF
+    END_FOR
+
+    
+    
+END

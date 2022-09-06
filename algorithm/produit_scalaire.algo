@@ -1,0 +1,51 @@
+// procédure
+
+PROCEDURE dot_product(v1,v2:ARRAY_OF FLOAT, var prod:FLOAT)
+VAR
+    i:INTEGER:=0;
+    
+BEGIN
+    FOR i FROM 0 TO v1.length-1 STEP 1  DO
+        prod:= prod + v1[i] * v2[i]
+    END_FOR
+END
+
+FUNCTION dot_product(v1 , v2:ARRAY_OF FLOAT) : FLOAT
+VAR
+    prod:FLOAT:=0;
+    i:INTEGER:=0;
+BEGIN
+     FOR i FROM 0 TO v1.length-1 STEP 1  DO
+        prod:= prod + v1[i] * v2[i]
+    END_FOR
+    RETURN prod ;
+END
+
+ALGORITHM Dot_Product
+VAR
+    List : STRUCT
+                v1 : ARRAY_OF FLOAT;
+                v2 : ARRAY_OF FLOAT;
+            END_STRUCT
+    arr : ARRAY_OF List;
+    i:INTEGER:=0;
+    prods:FLOAT;
+BEGIN
+    FOR i FROM 0 TO arr.length-1 STEP 1  DO
+        IF (arr[i].v1.length <> arr[i].v2.length) THEN
+            Write("les deux vecteurs ne sont pas de meme taille")
+        ELSE
+        //appel procedure
+            // prods:=0;
+            //dot_product(arr[i].v1 , arr[i].v2, prods);
+        //appel function
+            prods:=dot_product(arr[i].v1 , arr[i].v2);
+            IF (prod=0) THEN
+                Write("les deux vecteurs sont orthogonaux");
+            ELSE
+                Write("les deux vecteurs ne sont pas orthogonaux");
+            END_IF 
+        END_IF
+    END_FOR
+    // 
+END

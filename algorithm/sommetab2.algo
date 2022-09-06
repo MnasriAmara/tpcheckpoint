@@ -1,0 +1,45 @@
+ALGORITHM solution2
+VAR
+    tab1, tab2 , tab3 : ARRAY_OF INTEGER ;
+    i: INTEGER:=0;
+    //dinstinct: BOOLEAN:= FALSE;
+    sommedis:INTEGER:=0;
+    sommekifkif:INTEGER:=0;
+    count:INTEGER:=0;
+   htab: HASH_TABLE<INTEGER,INTEGER>;
+BEGIN
+    //remplissage du tableau tab1
+
+    FOR i FROM 0 TO tab1.length -1 STEP 1  DO
+       IF (htab.lookup(tab1[i]) = TRUE) THEN
+           count := htab.get(tab1[i]);
+           htab.insert(tab1[i],count+1);
+       ELSE
+           htab.insert(tab1[i],1);
+       END_IF
+   END_FOR
+
+    //remplissage du tableau tab2
+    //comparaison des elements du tab2 avec htab, s'il exite on ajoute 1 au count 
+   FOR i FROM 0 TO tab2.length -1 STEP 1  DO
+       IF (htab.lookup(tab2[i]) = TRUE) THEN
+           count := htab.get(tab2[i]);
+           htab.insert(tab2[i],count+1);
+       ELSE
+           htab.insert(tab2[i],1);
+       END_IF
+   END_FOR
+   
+   // tab3 contient les keys du htab
+    tab3:=htab.getKeys();
+
+    //somme des distincts , si valeur key =1 sommedinst= sommedis+key si non contrere
+    FOR i FROM 0 TO tab3.length-1   DO
+        IF (htab.get(tab3[i])=1) THEN
+            sommedis:= sommedis + tab3[i];
+            ELSE
+            sommekifkif := sommekifkif + tab3 [i]*2 ;
+        END_IF
+        
+    END_FOR
+END
